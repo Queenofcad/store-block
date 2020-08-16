@@ -4,6 +4,10 @@ import { useCssHandles } from "vtex.css-handles"
 
 const CSS_HANDLES = ["title"] as const
 
+interface TitleProps {
+  title: string
+}
+
 const Title: StorefrontFunctionComponent<TitleProps> = ({ title }) => {
     const handles = useCssHandles(CSS_HANDLES)
     const titleText = title || <FormattedMessage id="countdown.title" />
@@ -13,10 +17,6 @@ const Title: StorefrontFunctionComponent<TitleProps> = ({ title }) => {
             {titleText}
         </div>
     )
-  }
-
-  interface TitleProps {
-    title: string
   }
   
   Title.schema = {

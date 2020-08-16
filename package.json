@@ -16,6 +16,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "@vtex/api": "^6.36.0",
     "react-intl": "^5.4.7"
   }
 }
